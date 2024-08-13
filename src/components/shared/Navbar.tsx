@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="sticky top-0  w-full ">
-      <div className=" bg-red-500">
+      <div className=" bg-black py-1">
         <div className="grid md:grid-cols-3 gap-2 my-2">
           <div className="navbar-start  w-full flex items-center justify-center md:justify-start">
             <Link
