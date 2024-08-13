@@ -18,8 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="papaTrendsTheme">
-      <body className={`${inter.className} px-5`}>
+    <html
+      lang="en"
+      data-theme="papaTrendsTheme"
+      className="p-2 md:px-5 bg-black text-white"
+    >
+      <body className={`${inter.className} `}>
         <Navbar />
         {children}
         <Footer />
