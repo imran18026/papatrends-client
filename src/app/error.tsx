@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 /* eslint-disable @next/next/no-img-element */
 // pages/custom-error.js (or custom-error.tsx)
