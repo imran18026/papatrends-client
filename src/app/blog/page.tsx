@@ -4,35 +4,7 @@ import Link from "next/link";
 
 const page = async () => {
   const fetchData = await getAll.getAllBlog();
-  // const BlogData = [
-  //   {
-  //     id: 1,
-  //     title: "First Blog Post",
-  //     image: "https://m.media-amazon.com/images/I/41FC8QoPGbL._AC_SX679_.jpg",
-  //     content:
-  //       "This is the content of the first blog post in the blog post list.",
-  //     author: "John Doe",
-  //     date: "2022-01-01",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Second Blog Post",
-  //     image: "https://m.media-amazon.com/images/I/51WQ6YVoCzL._AC_SX679_.jpg",
-  //     content:
-  //       "This is the content of the Second blog post on the second blog post.",
-  //     author: "Abraham Doe",
-  //     date: "2023-04-26",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Third Blog Post",
-  //     image: "https://m.media-amazon.com/images/I/61xgnFpURwL._AC_SX679_.jpg",
-  //     content:
-  //       "This is the content of the third blog post in the blog post list.",
-  //     author: "Jane Smith",
-  //     date: "2022-12-31",
-  //   },
-  // ];
+
   return (
     <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {fetchData.data.map((post: any) => (
