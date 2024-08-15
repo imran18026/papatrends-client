@@ -36,7 +36,13 @@ const page = () => {
       {BlogData.map((post) => (
         <Link href={`/blog/${post.id}`} key={post.id}>
           <div className="border border-yellow-300 p-4 mb-2 rounded h-[400px]">
-            <Image src={post.image} alt={post.title} width={400} height={400} />
+            <Image
+              className="h-[250px] w-full object-cover rounded mb-2"
+              src={post.image}
+              alt={post.title}
+              width={400}
+              height={400}
+            />
             <h2 className="text-xl font-bold mb-2 text-center">{post.title}</h2>
             <p className="text-justify p-2 my-2">{post.content}</p>
           </div>
