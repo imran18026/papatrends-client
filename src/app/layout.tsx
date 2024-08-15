@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Papa Trends",
@@ -23,7 +26,7 @@ export default function RootLayout({
       data-theme="papaTrendsTheme"
       className="p-2 md:px-5 bg-black text-white"
     >
-      <body className={`${inter.className} `}>
+      <body className={`${roboto.className} `}>
         <Navbar />
         {children}
         <Footer />
