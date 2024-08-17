@@ -1,3 +1,4 @@
+import About from "../About/About";
 import Blog from "../Blog/Blog";
 import Carousal from "./Carousal";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
       <Carousal />
       <Blog />
+      <About />
     </div>
   );
 };
