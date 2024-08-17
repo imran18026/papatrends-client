@@ -3,13 +3,7 @@
 const Loader = () => {
   return (
     <div className="h-screen flex justify-center items-center">
-      <button type="button" className="bg-indigo-500 ..." disabled>
-        <svg
-          className="animate-spin h-5 w-5 mr-3 ..."
-          viewBox="0 0 24 24"
-        ></svg>
-        Processing...
-      </button>
+      <div className="text-2xl text-white ">...Processing...</div>
     </div>
   );
 };
